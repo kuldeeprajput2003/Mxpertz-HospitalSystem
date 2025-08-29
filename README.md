@@ -47,6 +47,7 @@ hospital-appointment-system/
 git clone https://github.com/your-username/hospital-appointment-system.git
 cd hospital-appointment-system
 
+```
 ---
 
 ## Backend Setup
@@ -60,55 +61,50 @@ PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 
-Run backend:
+### Run backend:
 
+```
 node index.js
 # or
 npx nodemon index.js
 Backend runs on: http://localhost:5000
+```
+---
 
 ## Frontend Setup
 
 cd frontend
 npm install
 
-Run frontend
+### Run frontend
 npm run dev
 Frontend runs on: http://localhost:5173
 
-## Dependencies
+---
 
-### Frontend
+## 📦 Dependencies
 
-React
+### 🔹 Backend
+- **express** – Web framework for Node.js
+- **mongoose** – MongoDB object modeling
+- **bcryptjs** – Password hashing
+- **jsonwebtoken** – JWT authentication
+- **cors** – Enable cross-origin requests
+- **dotenv** – Environment variable management
+- **nodemon** (dev) – Auto-restart server during development
 
-React Router DOM
+### 🔹 Frontend
+- **react** – UI library
+- **react-router-dom** – Routing
+- **axios** – HTTP client for API calls
+- **bootstrap / react-bootstrap** – UI styling
+- **vite** – React bundler & dev server
 
-Axios
-
-Bootstrap / React Bootstrap
-
-Vite
-
-### Backend
-
-Express
-
-Mongoose
-
-Bcryptjs
-
-Jsonwebtoken
-
-CORS
-
-Dotenv
-
-Nodemon
+---
 
 ## API Documentation
 
-User Registration
+## User Registration
 
 Endpoint:
 POST /api/auth/register
@@ -131,7 +127,9 @@ POST /api/auth/register
     "email": "john@example.com"}
 }
 
-### User Login
+---
+
+## User Login
 
 Endpoint:
 POST /api/auth/login
@@ -143,7 +141,9 @@ POST /api/auth/login
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
 
-### Book Appointment
+---
+
+## Book Appointment
 Endpoint:
 POST /api/appointments/book
 
@@ -170,7 +170,9 @@ Authorization: Bearer <your_token>
     "time": "10:30 AM" }
 }
 
-### Cancel Appointment
+---
+
+## Cancel Appointment
 
 Endpoint:
 DELETE /api/appointments/cancel/:id
@@ -190,38 +192,39 @@ Authorization: Bearer <your_token>
   }
 ]
 
+---
+
+
 ## 🛠️ Scripts
 
-### Frontend
+## Frontend
 
-npm run dev → Start frontend dev server
+- npm run dev → Start frontend dev server
+- npm run build → Build for production
+- npm run preview → Preview production build
 
-npm run build → Build for production
+---
 
-npm run preview → Preview production build
+## Backend
 
-### Backend
+- node index.js → Run backend
+- npx nodemon index.js → Run backend with auto-restart
 
-node index.js → Run backend
-
-npx nodemon index.js → Run backend with auto-restart
+---
 
 ## 🤝 Contributing
 
 Contributions are welcome!
+- Fork the repo
+- Create a feature branch
+- Commit changes
+- Open a Pull Request 🚀
 
-Fork the repo
+---
 
-Create a feature branch
-
-Commit changes
-
-Open a Pull Request 🚀
 
 ## 📄 License
 This project is licensed under the ISC License.
 
 
 ---
-
-Would you also like me to **add database schema documentation** (like `User` and `Appointment` models) in this README so developers can quickly understand the data structure?
