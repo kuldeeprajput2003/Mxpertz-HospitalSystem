@@ -47,6 +47,8 @@ hospital-appointment-system/
 git clone https://github.com/your-username/hospital-appointment-system.git
 cd hospital-appointment-system
 
+---
+
 ## Backend Setup
 
 cd backend
