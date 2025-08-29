@@ -9,8 +9,10 @@ Admins/Doctors can manage appointments and view patient bookings.
 ## 📂 Project Structure
 
 hospital-appointment-system/
-├── frontend # React + Vite client
-└── backend # Node.js + Express server
+|── frontend # React + Vite client
+
+
+|── backend # Node.js + Express server
 
 
 ---
