@@ -42,7 +42,7 @@ hospital-appointment-system/
 
 ## ⚙️ Installation Guide
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/your-username/hospital-appointment-system.git
 cd hospital-appointment-system
